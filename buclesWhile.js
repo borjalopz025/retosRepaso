@@ -15,16 +15,14 @@ hasEven([1, 2, 3, 5, 7, 9, 11, 13]);
 // Realizar una función que reciba un array de nombres y te devuelva verdadero si y solo si
 // todos los nombres empiezan por M.
 // La cabecera de la función tendrá el siguiente aspecto: function startWithM(myNames)
-var nombresConM;
-function startWithM(arrNombres) {
-    for (var i = 0; i < arrNombres.length; i++) {
-        if (arrNombres[i][0] !== "m") {
-            nombresConM = "true";
+function starWithM(myNames) {
+    var i = 0;
+    while (i < myNames.length) {
+        if (myNames[i][0] != "M") {
+            return false;
         }
-        else {
-            nombresConM = "false";
-        }
+        i++;
     }
-    console.log(nombresConM);
+    return true;
 }
-startWithM(["mario", "marta", "maria", "manolo"]);
+console.log(starWithM(["Mario", "Marta", "Maria", "Manolo"]));

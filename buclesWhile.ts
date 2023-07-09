@@ -22,19 +22,15 @@ function hasEven (num:number[])
 // todos los nombres empiezan por M.
 // La cabecera de la función tendrá el siguiente aspecto: function startWithM(myNames)
 
-let nombresConM:string;
 
-function startWithM (arrNombres: string[])
-{
-    for ( let nombres of arrNombres){
-        if (nombres[0] !== "m" ){
-            nombresConM = "true"
-            
-        }else {
-            nombresConM = "false"
-            
-        }return nombresConM
-    }
-}startWithM(["mario","marta","maria","manolo"])
+function starWithM(myNames : string []):boolean{
+    let i = 0;
+    while(i< myNames.length){
+        if(myNames[i][0] != "M"){
+            return false;
+        }i++
+    } return true;
+}
+console.log(starWithM(["Mario","Marta","Maria","Manolo"]))
 
 
