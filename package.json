@@ -1,0 +1,19 @@
+{
+  "name": "p-t-retosrepaso",
+  "version": "1.0.0",
+  "description": "\"# retosRepaso\"",
+  "main": "buclesWhile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borjalopz025/retosRepaso.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borjalopz025/retosRepaso/issues"
+  },
+  "homepage": "https://github.com/borjalopz025/retosRepaso#readme"
+}

@@ -1,12 +1,10 @@
-import { Point } from "./point";
-import { Triangle } from "./triangle";
+import {Point} from "./point";
+import {Triangle} from "./triangle";
 
+let punto1 = new Point(4,30);
+let punto2 = new Point(7,45);
+let punto3 = new Point(9,24);
 
+let myTriangle = new Triangle(punto1, punto2, punto3)
 
-let vertex1 =(new Point (3,5))
-let vertex2 =(new Point(-2,-9))
-let vertex3 =(new Point(-4,6))
-let triangulo:Triangle = new Triangle(vertex1,vertex2,vertex3)
-
-
-
+console.log(myTriangle.calculateLengthSides())

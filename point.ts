@@ -84,8 +84,18 @@ export class Point
 
     calculateNearest(newPoint : Point[])
     {
-        
+        let lessDistance = this.calcularDistancia(newPoint[0]);
+        let point = newPoint[0];
+        for(let i = 1; i < newPoint.length; i++){
+            let distancia = this.calcularDistancia(newPoint[i]);
+            if(distancia < lessDistance){
+                lessDistance = distancia;
+                point = point[i]
+            }        
+        } return point;
     }
+        
+    
 
     
    
